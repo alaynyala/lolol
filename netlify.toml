@@ -1,5 +1,5 @@
 [build]
-  command = "npx pnpm install --store=node_modules/.pnpm-store && pnpm run build"
+  command = "chmod +x clean-install.sh && ./clean-install.sh"
   publish = ".output/public"
 
 [build.environment]
@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
 
 [[headers]]
@@ -17,4 +17,4 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff" 
+    X-Content-Type-Options = "nosniff"

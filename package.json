@@ -12,7 +12,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start:prod": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
@@ -26,5 +27,15 @@
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@nuxt/schema": "3.16.2"
+  },
+  "resolutions": {
+    "are-we-there-yet": "^3.0.1",
+    "gauge": "^5.0.0",
+    "glob": "^10.3.10",
+    "inflight": "^1.0.6",
+    "node-dom": "latest"
   }
 }

@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+=======
+# Nuxt Content Starter
+
+Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
+>>>>>>> 23df34ec4b1dc369631019053bdf47cf9b8a5e8f
 
 ## Setup
 

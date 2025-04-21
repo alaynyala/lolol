@@ -1,19 +1,12 @@
 {
-<<<<<<< HEAD
   "name": "nuxt-app",
   "private": true,
   "type": "module",
-=======
-  "name": "nuxt-content-starter",
-  "private": true,
-  "type": "module",
   "packageManager": "pnpm@9.15.9",
->>>>>>> 23df34ec4b1dc369631019053bdf47cf9b8a5e8f
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-<<<<<<< HEAD
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
@@ -29,12 +22,5 @@
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "zod": "^3.22.4"
-=======
-    "preview": "nuxt preview"
-  },
-  "dependencies": {
-    "@nuxt/content": "^3.4.0",
-    "nuxt": "^3.16.2"
->>>>>>> 23df34ec4b1dc369631019053bdf47cf9b8a5e8f
   }
 }

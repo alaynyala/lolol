@@ -1,5 +1,0 @@
-// ROLLUP_NO_REPLACE 
- const mosaic = "{\"parsed\":{\"_path\":\"/art/mosaic\",\"_dir\":\"art\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Les Belles Choses\",\"description\":\"\",\"slug\":\"mosaic\",\"category\":\"project\",\"order\":6,\"color\":\"#AEAD7B\",\"subtitle\":\"site-specific art\",\"roles\":[\"Planning\",\"Production\"],\"year\":2024,\"clients\":[\"Chef Andrew Black\",\"Skirvin Hotel\"],\"featured_image\":\"/img/pm/lbc/06.png\",\"previous\":\"/projects/rembaum-hanau\",\"next\":\"/art/the-reader\",\"images\":[\"/img/pm/lbc/01.png\",\"/img/pm/lbc/05.png\",\"/img/pm/lbc/03.png\",\"/img/pm/lbc/04.png\",\"/img/pm/lbc/02.png\"],\"body\":{\"type\":\"root\",\"children\":[],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:art:mosaic.md\",\"_source\":\"content\",\"_file\":\"art/mosaic.md\",\"_stem\":\"art/mosaic\",\"_extension\":\"md\"},\"hash\":\"OaNOh3eFzU\"}";
-
-export { mosaic as default };
-//# sourceMappingURL=mosaic.mjs.map

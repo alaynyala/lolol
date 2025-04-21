@@ -1,5 +1,0 @@
-// ROLLUP_NO_REPLACE 
- const theReader = "{\"parsed\":{\"_path\":\"/art/the-reader\",\"_dir\":\"art\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"The Reader\",\"description\":\"\",\"slug\":\"the-reader\",\"category\":\"project\",\"order\":7,\"color\":\"#231F5B\",\"subtitle\":\"site-specific art\",\"roles\":[\"Conceptual Design\",\"Planning & Procurement\",\"Production\"],\"year\":2024,\"clients\":[\"The Ellison Hotel\",\"Marriott\"],\"featured_image\":\"/img/art-reader2.webp\",\"previous\":\"/art/mosaic\",\"next\":\"/art/plaza-walls\",\"images\":[\"/img/rd/01.jpg\",\"/img/rd/02.jpg\",\"/img/rd/03.png\",\"/img/rd/04.png\"],\"body\":{\"type\":\"root\",\"children\":[],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:art:the-reader.md\",\"_source\":\"content\",\"_file\":\"art/the-reader.md\",\"_stem\":\"art/the-reader\",\"_extension\":\"md\"},\"hash\":\"Le8YQsRtJd\"}";
-
-export { theReader as default };
-//# sourceMappingURL=the-reader.mjs.map

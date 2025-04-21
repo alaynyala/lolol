@@ -1,1 +1,0 @@
-import{e as n,r as e}from"./C4ycrCUn.js";const o=n({name:"DocumentDrivenNotFound",render(){return e("div","Document not found")}}),r=Object.assign(o,{__name:"DocumentDrivenNotFound"});export{r as default};

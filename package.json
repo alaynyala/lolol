@@ -1,5 +1,6 @@
 {
   "name": "nuxt-app",
+  "description": "Personal portfolio website",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.15.9",

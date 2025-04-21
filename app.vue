@@ -1,7 +1,15 @@
 <template>
   <div class="app-wrapper">
     <TheNavigation />
-    <NuxtPage class="page" />
+    <NuxtErrorBoundary>
+      <NuxtPage class="page" />
+      <template #error="{ error }">
+        <div class="error-container">
+          <p>An error occurred: {{ error }}</p>
+          <button @click="error.value = null">Try again</button>
+        </div>
+      </template>
+    </NuxtErrorBoundary>
     <TheFooter />
   </div>
 </template>
@@ -13,6 +21,7 @@ import { gsap } from 'gsap'
 import { onMounted } from 'vue'
 
 onMounted(() => {
+  console.log('App mounted')
   // Initial page fade in
   gsap.from('.page', {
     opacity: 0,
@@ -37,6 +46,19 @@ body {
 .page {
   min-height: 100vh;
   will-change: opacity;
+}
+
+.error-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-container button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid currentColor;
+  background: transparent;
+  cursor: pointer;
 }
 
 /* Page Transition Classes */

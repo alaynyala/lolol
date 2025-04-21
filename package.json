@@ -8,7 +8,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "build": "NITRO_PRESET=vercel nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

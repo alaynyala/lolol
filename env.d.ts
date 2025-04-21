@@ -78,6 +78,9 @@ declare module '@nuxt/schema' {
         rehypePlugins?: string[]
       }
     }
+    nitro?: {
+      preset?: string
+    }
   }
 }
 

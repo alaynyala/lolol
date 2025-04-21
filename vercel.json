@@ -1,4 +1,8 @@
 {
+  "framework": "nuxt",
+  "buildCommand": "NITRO_PRESET=vercel-edge nuxt build",
+  "devCommand": "nuxt dev",
+  "ignoreCommand": "",
   "version": 2,
   "builds": [
     {

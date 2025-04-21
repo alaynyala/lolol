@@ -1,5 +1,10 @@
 {
-  "framework": "nuxtjs",
-  "buildCommand": "nuxt build",
-  "outputDirectory": ".output"
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "framework": "nuxt",
+  "functions": {
+    "__nitro": {
+      "runtime": "nodejs20.x"
+    }
+  }
 } 

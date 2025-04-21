@@ -1,10 +1,12 @@
 {
+  "framework": "nuxtjs",
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm run dev",
-  "framework": "nuxtjs",
+  "outputDirectory": ".output",
   "functions": {
     "__nitro": {
-      "runtime": "nodejs20.x"
+      "runtime": "nodejs20.x",
+      "maxDuration": 60
     }
   }
 } 

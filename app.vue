@@ -20,6 +20,13 @@ import TheFooter from './components/global/TheFooter.vue';
 import { gsap } from 'gsap'
 import { onMounted } from 'vue'
 
+// Set HTML language attribute
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
+
 onMounted(() => {
   console.log('App mounted')
   // Initial page fade in

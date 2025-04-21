@@ -353,7 +353,7 @@ next: "/case-studies/ccb"
       <div class="lbc-link">
         <p>les belles choses</p>
         <div class="link-button">
-          <a href="/projects/mosaic" >view project<img src="/img/arrow-rt.svg"/></a>
+          <a href="/art/mosaic" >view project<img src="/img/arrow-rt.svg"/></a>
         </div>
       </div>
     </div>

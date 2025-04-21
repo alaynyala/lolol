@@ -29,5 +29,7 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'netlify'
-  }
+  },
+
+  compatibilityDate: '2025-04-21'
 })

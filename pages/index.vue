@@ -21,7 +21,7 @@
                     <div v-else class="case-study-item" v-for="caseStudy in list" :key="caseStudy._id">
                         <NuxtLink :to="`/case-studies/${caseStudy.slug}`">
                             <div class="case-study-id">
-                                <div>{{ caseStudy.order }}</div>
+                                <div>0{{ caseStudy.order }}</div>
                                 <div class="case-study-title"> {{ caseStudy.title }}</div>
                             </div>
                             <div class="case-study-item-video" :style="{ backgroundColor: caseStudy.color }">

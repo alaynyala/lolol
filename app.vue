@@ -52,6 +52,8 @@ body {
 
 .page {
   min-height: 100vh;
+  max-width: calc(100vw - 1vw);
+  margin: 0 auto;
   will-change: opacity;
 }
 

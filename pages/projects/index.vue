@@ -99,6 +99,9 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const isCaseStudy = computed(() => route.path.includes('/case-studies'))
+const isProject = computed(() => route.path.includes('/projects'))
+const isArt = computed(() => route.path.includes('/art'))
+
 
 
 
@@ -129,7 +132,7 @@ const isCaseStudy = computed(() => route.path.includes('/case-studies'))
 
 
 .item {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: row;
     align-items: center;

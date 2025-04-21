@@ -248,6 +248,7 @@ a {
     max-width: calc(100vw - 2vw);
 }
 
+
 .row-1,
 .row-3 {
     display: flex;

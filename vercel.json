@@ -1,7 +1,7 @@
 {
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm run dev",
-  "framework": "nuxt",
+  "framework": "nuxtjs",
   "functions": {
     "__nitro": {
       "runtime": "nodejs20.x"

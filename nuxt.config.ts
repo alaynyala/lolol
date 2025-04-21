@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/image'
   ],
-  
+
   content: {
     experimental: {
       nativeSqlite: false
@@ -25,5 +25,9 @@ export default defineNuxtConfig({
     preference: 'system',
     fallback: 'light',
     classSuffix: ''
+  },
+
+  nitro: {
+    preset: 'vercel'
   }
 })

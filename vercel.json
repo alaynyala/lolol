@@ -4,9 +4,12 @@
   "devCommand": "pnpm run dev",
   "outputDirectory": ".output",
   "functions": {
+    "**/*": {
+      "runtime": "nodejs18.x"
+    },
     "__nitro": {
       "runtime": "nodejs18.x",
       "maxDuration": 60
     }
   }
-} 
+}

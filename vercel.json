@@ -1,6 +1,5 @@
 {
   "framework": "nuxt",
-  "buildCommand": "NITRO_PRESET=vercel-edge nuxt build",
-  "devCommand": "nuxt dev",
-  "ignoreCommand": ""
+  "buildCommand": "nuxt build",
+  "outputDirectory": ".output"
 } 

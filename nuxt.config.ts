@@ -30,20 +30,28 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'vercel',
-    routeRules: {
-      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000' } }
+    preset: 'vercel-edge',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
     }
+  },
+
+  routeRules: {
+    '/**': { ssr: true }
   },
 
   future: {
     compatibilityVersion: 4,
   },
 
-  ssr: true,
-  
   experimental: {
-    payloadExtraction: false
+    payloadExtraction: false,
+    renderJsonPayloads: false
+  },
+
+  typescript: {
+    strict: true
   },
 
   compatibilityDate: '2024-04-03'

@@ -168,6 +168,12 @@ const isCaseStudy = computed(() => route.path.includes('/case-studies'))
     gap: 16px;
     padding-bottom: 1rem;
 }
+.dot-order-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 .roles {
     display: flex;
@@ -240,12 +246,7 @@ const isCaseStudy = computed(() => route.path.includes('/case-studies'))
         padding: 1rem 0;
         justify-content: center;
     }
-    .dot-order-wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+   
     .id {
         width: 95%;
         flex-direction: row;

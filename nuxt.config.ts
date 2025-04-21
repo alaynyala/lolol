@@ -21,8 +21,27 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    public: {
+      baseURL: '/'
+    }
+  },
+
   app: {
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    baseURL: '/',
+    buildAssetsDir: '/_nuxt/',
+    head: {
+      htmlAttrs: {
+        lang: 'en'
+      }
+    }
+  },
+
+  nitro: {
+    routeRules: {
+      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000' } }
+    }
   },
 
   compatibilityDate: '2025-04-11'

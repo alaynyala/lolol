@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // content.config.ts
 import { defineContentConfig } from '@nuxt/content'
 import { z } from 'zod'
@@ -67,15 +66,3 @@ export default defineContentConfig({
     })
   }
 })
-=======
-import { defineContentConfig, defineCollection } from '@nuxt/content'
-
-export default defineContentConfig({
-  collections: {
-    content: defineCollection({
-      type: 'page',
-      source: '**',
-    }),
-  },
-})
->>>>>>> 23df34ec4b1dc369631019053bdf47cf9b8a5e8f

@@ -1,0 +1,10 @@
+# Exclude development files
+.nuxt
+.output
+node_modules
+.env
+.env.*
+!.env.example
+
+# Do not exclude content directory
+!content/ 

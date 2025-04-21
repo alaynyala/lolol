@@ -13,7 +13,7 @@
 
     <!-- Projects Section -->
     <div class="projects">
-        <ContentList path="/case-studies" :where="{ order: { $in: [1, 2] } }" :sort="{ order: 1 }" @error="handleError">
+        <ContentList path="case-studies" :where="{ order: { $in: [1, 2] } }" :sort="{ order: 1 }" @error="handleError">
             <template #default="{ list }">
                 <div class="row-1">
                     <div v-if="pending">Loading...</div>
@@ -40,7 +40,7 @@
             </template>
         </ContentList>
 
-        <ContentList path="/case-studies" :where="{ order: 3 }" @error="handleError">
+        <ContentList path="case-studies" :where="{ order: 3 }" @error="handleError">
             <template #default="{ list }">
                 <div class="row-2">
                     <div v-if="!list?.length">No case study found (order 3). Debug: {{ debugInfo }}</div>
@@ -66,7 +66,7 @@
             </template>
         </ContentList>
 
-        <ContentList path="/projects" :where="{ order: { $in: [4, 5] } }" :sort="{ order: 1 }" @error="handleError">
+        <ContentList path="projects" :where="{ order: { $in: [4, 5] } }" :sort="{ order: 1 }" @error="handleError">
             <template #default="{ list }">
                 <div class="row-3">
                     <div v-if="pending">Loading...</div>

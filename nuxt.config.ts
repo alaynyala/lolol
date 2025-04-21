@@ -5,8 +5,12 @@ export default defineNuxtConfig({
 
   content: {
     experimental: {
-      nativeSqlite: true
+      nativeSqlite: false
     },
+    documentDriven: true,
+    markdown: {
+      anchorLinks: false
+    }
   },
 
   ui: {

@@ -1,0 +1,1 @@
+import{e as n,r as e}from"./C4ycrCUn.js";const o=n({name:"DocumentDrivenEmpty",props:{value:{type:Object,required:!0}},render({value:t}){return e("div",void 0,[e("p","Document is empty"),e("p",`Add content to it by opening ${t._source}/${t._file} file.`)])}}),i=Object.assign(o,{__name:"DocumentDrivenEmpty"});export{i as default};

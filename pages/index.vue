@@ -74,7 +74,7 @@
                     <div v-else class="project-item" v-for="project in list" :key="project._id">
                         <NuxtLink :to="`/projects/${project.slug}`">
                             <div class="project-id">
-                                <div>{{ project.order }}</div>
+                                <div>0{{ project.order }}</div>
                                 <div class="project-title"> {{ project.title }}</div>
                             </div>
                             <div class="project-item-video" :style="{ backgroundColor: project.color }">

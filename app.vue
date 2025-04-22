@@ -19,6 +19,7 @@ import TheNavigation from './components/global/TheNavigation.vue';
 import TheFooter from './components/global/TheFooter.vue';
 import { gsap } from 'gsap'
 import { onMounted } from 'vue'
+import '@/public/fonts.css'
 
 // Set HTML language attribute
 useHead({
@@ -40,7 +41,7 @@ onMounted(() => {
 
 <style>
 body {
-  font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+  font-family: 'neue-haas-grotesk-text', 'Helvetica', sans-serif;
   letter-spacing: -0.02em;
   margin:0;
   padding:0;

@@ -26,7 +26,7 @@
                             </div>
                             <div class="case-study-item-video" :style="{ backgroundColor: caseStudy.color }">
                                 <video v-if="caseStudy.landing_video" :src="caseStudy.landing_video" playsinline autoplay muted
-                                    loop conrolsList="noremoteplayback"></video>
+                                    loop controlsList="noremoteplayback"></video>
                             </div>
                         </NuxtLink>
                     </div>
@@ -52,7 +52,7 @@
                             </div>
                             <div class="case-study-item-video" :style="{ backgroundColor: caseStudy.color }">
                                 <video v-if="caseStudy.landing_video" :src="caseStudy.landing_video" playsinline autoplay muted
-                                    loop conrolsList="noremoteplayback"></video>
+                                    loop controlsList="noremoteplayback"></video>
                             </div>
                         </NuxtLink>
                     </div>
@@ -79,7 +79,7 @@
                             </div>
                             <div class="project-item-video" :style="{ backgroundColor: project.color }">
                                 <video v-if="project.landing_video" :src="project.landing_video" playsinline autoplay muted
-                                loop conrolsList="noremoteplayback"></video>
+                                loop controlsList="noremoteplayback"></video>
                             </div>
                         </NuxtLink>
                     </div>

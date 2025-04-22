@@ -31,7 +31,7 @@
             </div>
         </ContentList>
         <ContentList path="/projects" :where="{ order: { $in: [4, 5] } }" :sort="{ order: 1 }" v-slot="{ list }">
-            <div class="projects">
+            <div class="archive-projects">
                 <div v-if="pending">Loading...</div>
                 <div v-else-if="!list?.length">No projects found.</div>
                 <div v-else class="item" v-for="project in list" :key="project._id">
@@ -121,7 +121,7 @@ const isArt = computed(() => route.path.includes('/art'))
 
 
 
-.case-studies, .projects, .art {
+.case-studies, .art, .archive-projects {
     width: 100%;
     display: flex;
     flex-direction: column;

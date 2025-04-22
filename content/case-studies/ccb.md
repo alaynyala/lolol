@@ -242,11 +242,21 @@ next: "/case-studies/okcmoa"
 <div class="content-container">
   <div class="video-container">
     <div class="video-inset">
-      <video src="/videos/ccb-mb-mu.webm" autoplay muted loop></video>
+    <video
+        :src="/videos/ccb-mb-mu.webm"
+        ratio="1/1"
+        autoplay
+        muted
+        loop
+      />
     </div>
   </div>
   <div class="img-container">
-    <img src="/img/ccb/ccb-mb-3.png" />
+    <img
+      src="img/ccb/ccb-mb-3.png"
+      alt="CCB Mobile Design"
+      placeholder="preview"
+    />
   </div>
   <div class="image-container-cols">
     <div class="img-left">

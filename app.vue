@@ -48,12 +48,15 @@ body {
 
 .app-wrapper {
   opacity: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page {
   min-height: 100vh;
-  max-width: calc(100vw - 1vw);
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   will-change: opacity;
 }
 

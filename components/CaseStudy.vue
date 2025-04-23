@@ -16,7 +16,9 @@
             </div>
         </div>
         <div class="case-study-hero">
-            <video class="case-study-hero-video" :src="caseStudy.featured_video" autoplay muted loop playsinline></video>
+            <div class="case-study-hero-video">
+                <CloudflareStream v-if="caseStudy.featured_video" :debug="true" :videoId="caseStudy.featured_video" videoType="caseStudyHero" borderRadius="0.33rem" :autoplay="true" :muted="true" :loop="true" />
+            </div>
         </div>
         <div class="case-study-contributions">
             <div class="case-study-contributions-left">
@@ -33,12 +35,13 @@
                 </div>
                 <div class="case-study-contributions-left-bottom">
                     <div class="case-study-contributions-left-bottom-list">
-                        <h3>design</h3> 
+                        <h3>design</h3>
                         <p v-for="design in caseStudy.contributions.design" :key="design">{{ design }}</p>
                     </div>
                     <div class="case-study-contributions-left-bottom-list">
-                        <h3>site development</h3> 
-                        <p v-for="development in caseStudy.contributions.development" :key="development">{{ development }}</p>
+                        <h3>site development</h3>
+                        <p v-for="development in caseStudy.contributions.development" :key="development">{{ development
+                            }}</p>
                     </div>
                 </div>
             </div>
@@ -62,36 +65,52 @@
                 <div class="collaborators-right-top">
                     <div class="collaborators-right-top-list">
                         <h3>brand design & development</h3>
-                        <p v-for="brand_design in caseStudy.collaborators.brand_design" :key="brand_design">{{ brand_design }}</p>
+                        <p v-for="brand_design in caseStudy.collaborators.brand_design" :key="brand_design">{{
+                            brand_design }}</p>
                     </div>
                     <div v-if="caseStudy.collaborators.brand_messaging" class="collaborators-right-top-list">
                         <h3>brand messaging & strategy</h3>
-                        <p v-for="brand_messaging in caseStudy.collaborators.brand_messaging" :key="brand_messaging">{{ brand_messaging }}</p>
+                        <p v-for="brand_messaging in caseStudy.collaborators.brand_messaging" :key="brand_messaging">{{
+                            brand_messaging }}</p>
                     </div>
                 </div>
                 <div class="collaborators-right-bottom">
                     <div class="collaborators-right-bottom-list">
                         <h3>web development</h3>
-                        <p v-for="development in caseStudy.collaborators.development" :key="development">{{ development }}</p>
+                        <p v-for="development in caseStudy.collaborators.development" :key="development">{{ development
+                            }}</p>
                     </div>
                     <div class="collaborators-right-bottom-list">
-                        <a href="https://www.cooper-house.com" target="_blank" rel="noopener noreferrer"><p>via {{ caseStudy.collaborators.agency }}</p></a>
+                        <a href="https://www.cooper-house.com" target="_blank" rel="noopener noreferrer">
+                            <p>via {{ caseStudy.collaborators.agency }}</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="case-study-prev-next">
-            <NuxtLink :to="caseStudy.previous"><p>view prev</p></NuxtLink>
-            <NuxtLink :to="caseStudy.next"><p>view next</p></NuxtLink>
+            <NuxtLink :to="caseStudy.previous">
+                <p>view prev</p>
+            </NuxtLink>
+            <NuxtLink :to="caseStudy.next">
+                <p>view next</p>
+            </NuxtLink>
         </div>
         <div class="case-study-footer">
-            <NuxtLink to="/"><p>home</p></NuxtLink>
-            <NuxtLink to="#case-study-header"><p>back to top</p></NuxtLink>
+            <NuxtLink to="/">
+                <p>home</p>
+            </NuxtLink>
+            <NuxtLink to="#case-study-header">
+                <p>back to top</p>
+            </NuxtLink>
         </div>
     </div>
 </template>
 
 <script setup>
+import CloudflareStream from '~/components/CloudflareStream.vue'
+
+
 const { caseStudy } = defineProps({
     caseStudy: Object
 })
@@ -160,15 +179,47 @@ const { caseStudy } = defineProps({
 
 .case-study-hero {
     width: 100%;
-    height: 80%;
+    height: 80vh;
     position: relative;
+    overflow: hidden;
 }   
 
+
 .case-study-hero-video {
+    border-radius: .33rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.case-study-hero-video .stream-media,
+.case-study-hero-video iframe,
+.case-study-hero-video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: .33rem
+    object-position: center;
+    border-radius: .33rem;
+}
+
+/* Force 100% width for videos in content sections */
+.case-study-content .video-container {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16/9;
+    margin-bottom: 0.33rem;
+}
+
+.case-study-content .video-container video,
+.case-study-content .video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .33rem;
 }
 
 .case-study-contributions {

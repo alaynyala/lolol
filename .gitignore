@@ -26,3 +26,8 @@ logs
 # Lock files
 pnpm-lock.yaml
 .vercel
+
+# Environment variables
+.env
+.env.*
+!.env.example

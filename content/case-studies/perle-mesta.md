@@ -40,7 +40,7 @@ brief:
     - "My technical approach included developing a comprehensive design system with component documentation, building interactive prototypes demonstrating time-based theme transitions, implementing a conversion-optimized navigation structure based on competitor research, and creating detailed WordPress integration specifications for the development team. This multifaceted approach ensured smooth implementation while maintaining the design integrity throughout the development process."
     - "The project showcased my ability to bridge digital and physical design—I extended the brand experience by creating a custom mosaic for the private dining room that complemented the website's aesthetic."
     - "This multifaceted solution not only increased site traffic and streamlined content management for the client but also demonstrated my ability to deliver innovative, results-driven design that solves real business challenges."
-featured_video: "/videos/pm-cs-mbp.webm"
+featured_video: "0541c07120da5061f3d5e574fff9ab19"
 landing_video: "e3fa7f6840ea4c68a24530d34fc79ec1"
 previous: "/projects/rembaum-hanau"
 next: "/case-studies/ccb"
@@ -52,12 +52,35 @@ next: "/case-studies/ccb"
     }
     
     .video-container {
-      width: 100%;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 0.33rem;
+    /* margin-bottom: 0.33rem; */
+    padding: 4rem;
+}
+    
+    .video-container .cloudflare-stream-container,
+    .video-container .cloudflare-stream-container iframe {
+      width: 100% !important;
+      height: 100% !important;
+      position: relative;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      border-radius: 0.33rem;
     }
     
-    .video-container video {
+    .video-container video,
+    .video-container iframe {
       width: 100%;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover !important;
+      object-position: center;
       border-radius: 0.33rem;
     }
     
@@ -77,7 +100,7 @@ next: "/case-studies/ccb"
       width: 50%;
     }
     
-    .img-left img, .img-right img {
+    .img-left .cloudflare-image-container cfimage, .img-right img {
       width: 100%;
       aspect-ratio: 1/1;
       border-radius: 0.33rem;
@@ -295,25 +318,23 @@ next: "/case-studies/ccb"
 }
   </style>
 
-<!-- Example usage of the CloudflareStream component -->
-<!-- <CloudflareStream videoId="e3fa7f6840ea4c68a24530d34fc79ec1" height="500px" /> -->
-<!-- You can also use the full URL -->
-<!-- <CloudflareStream videoId="https://customer-vpj7vtuxn5lcy2o3.cloudflarestream.com/e3fa7f6840ea4c68a24530d34fc79ec1/watch" height="500px" /> -->
-
 <div class="content-container">
   <div class="video-container">
-    <CFVideo 
-      videoId="e3fa7f6840ea4c68a24530d34fc79ec1"
-      height="720px"
+    <cloudflare-stream 
+      videoId="ca8ea7e3df50d2c6f14dacff64c0290d"
+      height="100%"
+      width="100%"
+      videoType="default"
       :controls="true"
       :muted="true"
       :autoplay="true"
       :loop="true"
+      borderRadius="0.33rem"
     />
   </div>
   <div class="image-container-cols">
     <div class="img-left">
-      <img src="/img/pm/pm-up.png"/>
+      <cloudflare-image imageId="9c542ea5-264f-45ff-082d-6a6964c50000"/>
     </div>
     <div class="img-right">
      <img src="/img/pm/pm-sitemap.png"/>

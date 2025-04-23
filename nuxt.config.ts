@@ -10,6 +10,12 @@ export default defineNuxtConfig({
   content: {
     experimental: {
       nativeSqlite: false
+    },
+    // Just enable rehype-raw to allow HTML in markdown
+    markdown: {
+      rehypePlugins: [
+        'rehype-raw'
+      ]
     }
   },
 

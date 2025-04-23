@@ -16,7 +16,7 @@
                     <p v-for="role in caseStudy.roles" :key="role">{{ role }}</p>
                 </div>
                             <div class="year">{{ caseStudy.year }}</div>
-                            <div class="project-link">
+                            <div class="archive-project-link">
                             <a :href="`/case-studies/${caseStudy.slug}`">view project
                                 <svg width="37" height="8" viewBox="0 0 37 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
                                 <p v-for="role in project.roles" :key="role">{{ role }}</p>
                             </div>
                             <div class="year">{{ project.year }}</div>
-                            <div class="project-link">
+                            <div class="archive-project-link">
                             <a :href="`/projects/${project.slug}`">view project
                                 <svg width="37" height="8" viewBox="0 0 37 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
                             <p v-for="role in art.roles" :key="role">{{ role }}</p>
                         </div>
                         <div class="year">{{ art.year }}</div>
-                        <div class="project-link">
+                        <div class="archive-project-link">
                                 <a :href="`/art/${art.slug}`">view project
                                 <svg width="37" height="8" viewBox="0 0 37 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -172,10 +172,11 @@ const isArt = computed(() => route.path.includes('/art'))
     padding-bottom: 1rem;
 }
 .dot-order-wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    width: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     }
 
 .roles {
@@ -212,22 +213,22 @@ const isArt = computed(() => route.path.includes('/art'))
     max-width: 8rem;
 }
 
-.project-link {
+.archive-project-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    max-width: 17.5rem;
+    max-width: 18.5rem;
 }
-.project-link a {
+.archive-project-link a {
     font-size: .75rem;
 }
-.project-link svg {
+.archive-project-link svg {
     width: 2rem;
 }
 
-.project-link svg path {
+.archive-project-link svg path {
     fill: #000;
 }
 
@@ -236,7 +237,7 @@ const isArt = computed(() => route.path.includes('/art'))
         font-size: .67rem;
         margin: 0;
     }
-    .case-studies, .projects, .art {
+    .case-studies, .archive-projects, .art {
         width: 90%;
         padding: 0;
         margin: 0 auto;
@@ -266,7 +267,7 @@ const isArt = computed(() => route.path.includes('/art'))
         font-weight: 500;
     }
     .title {
-       width: 65%;
+       width: 88%;
        text-align: right;
        font-size: .67rem;
        align-self: flex-start;
@@ -285,16 +286,16 @@ const isArt = computed(() => route.path.includes('/art'))
     .year {
         display: none;
     }
-    .project-link { 
+    .archive-project-link { 
         width: 40%;
         justify-content: flex-end;      
         align-self: flex-end;
     }
-    .project-link a {
+    .archive-project-link a {
         align-self: flex-end;
         font-size: .67rem;
     }
-    .project-link svg {
+    .archive-project-link svg {
         width: 1.5rem;
     }
 }

@@ -40,7 +40,7 @@ brief:
   - "Based on competitor research, I added a sticky sidebar that kept subpages visible without requiring users to leave their current page. We improved content organization through strategic cross-linking and custom fields for better content management."
   - "Our mobile-first approach served diverse users, while accessibility controls gave users options for typography size and contrast. The results speak for themselves: 42% more online applications, 65% fewer support calls about navigation, better accessibility compliance, and client-managed content updates. We successfully balanced professional banking with community warmth and tribal heritage."
 featured_video: "/videos/ccb-intro.webm"
-landing_video: "/videos/ccb-landing.webm"
+landing_video: "ba6e61f1399ab55a791d41ae58c81436"
 previous: "/case-studies/perle-mesta"
 next: "/case-studies/okcmoa"
 ---

@@ -9,9 +9,9 @@ roles: ["UX Research & Strategy", "Content Strategy", "Site Design"]
 year: 2024
 clients: ["Sharon Rembaum", "Camille Hanau"]
 featured_image: "/img/rh/rh-ftd.png"
-landing_video: "/videos/rh-landing.webm"
+landing_video: "f1516794ab6762595b3bae7ffc7d066d"
 previous: "/projects/leaderhealth"
-next: "/case-studies/perle-mesta"
+next: "/art/mosaic"
 ---
 
 <style>

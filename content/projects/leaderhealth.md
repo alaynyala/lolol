@@ -9,7 +9,7 @@ roles: ["UX Research & Strategy", "Lead Web Designer", "Art Direction - Photogra
 year: 2024
 clients: ["Dr. Shanna Teel"]
 featured_image: "/img/lh/leaderhealth-ftd.png"
-landing_video: "/videos/lh-landing.webm"
+landing_video: "429d56722d3aa274a81b530acb8e8dc4"
 previous: "/case-studies/okcmoa"
 next: "/projects/rembaum-hanau"
 ---

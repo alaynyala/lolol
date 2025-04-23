@@ -2,7 +2,9 @@
   <div class="app-wrapper">
     <TheNavigation />
     <NuxtErrorBoundary>
-      <NuxtPage class="page" />
+      <div class="page-container">
+        <NuxtPage />
+      </div>
       <template #error="{ error }">
         <div class="error-container">
           <p>An error occurred: {{ error }}</p>
@@ -19,19 +21,24 @@ import TheNavigation from './components/global/TheNavigation.vue';
 import TheFooter from './components/global/TheFooter.vue';
 import { gsap } from 'gsap'
 import { onMounted } from 'vue'
-import '@/public/fonts.css'
 
 // Set HTML language attribute
 useHead({
   htmlAttrs: {
     lang: 'en'
-  }
+  },
+  link: [
+    {
+      rel: 'stylesheet',
+      href: 'https://use.typekit.net/poc4zee.css' 
+    }
+  ]
 })
 
 onMounted(() => {
   console.log('App mounted')
   // Initial page fade in
-  gsap.from('.page', {
+  gsap.from('.page-container', {
     opacity: 0,
     duration: 0.3,
     ease: 'power2.inOut'
@@ -41,11 +48,13 @@ onMounted(() => {
 
 <style>
 body {
-  font-family: 'neue-haas-grotesk-text', 'Helvetica', sans-serif;
-  letter-spacing: -0.02em;
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  letter-spacing:0em;
   margin:0;
   padding:0;
 }
+
+
 
 .app-wrapper {
   opacity: 1;
@@ -54,7 +63,7 @@ body {
   padding: 0;
 }
 
-.page {
+.page-container {
   min-height: 100vh;
   margin: 0;
   padding: 0;

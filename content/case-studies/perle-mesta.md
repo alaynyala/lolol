@@ -41,7 +41,7 @@ brief:
     - "The project showcased my ability to bridge digital and physical design—I extended the brand experience by creating a custom mosaic for the private dining room that complemented the website's aesthetic."
     - "This multifaceted solution not only increased site traffic and streamlined content management for the client but also demonstrated my ability to deliver innovative, results-driven design that solves real business challenges."
 featured_video: "/videos/pm-cs-mbp.webm"
-landing_video: "/videos/pm-landing.webm"
+landing_video: "e3fa7f6840ea4c68a24530d34fc79ec1"
 previous: "/projects/rembaum-hanau"
 next: "/case-studies/ccb"
 ---
@@ -295,9 +295,21 @@ next: "/case-studies/ccb"
 }
   </style>
 
+<!-- Example usage of the CloudflareStream component -->
+<!-- <CloudflareStream videoId="e3fa7f6840ea4c68a24530d34fc79ec1" height="500px" /> -->
+<!-- You can also use the full URL -->
+<!-- <CloudflareStream videoId="https://customer-vpj7vtuxn5lcy2o3.cloudflarestream.com/e3fa7f6840ea4c68a24530d34fc79ec1/watch" height="500px" /> -->
+
 <div class="content-container">
   <div class="video-container">
-    <video src="/videos/PM-VID.webm" autoplay muted loop></video>
+    <CFVideo 
+      videoId="e3fa7f6840ea4c68a24530d34fc79ec1"
+      height="720px"
+      :controls="true"
+      :muted="true"
+      :autoplay="true"
+      :loop="true"
+    />
   </div>
   <div class="image-container-cols">
     <div class="img-left">

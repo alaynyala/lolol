@@ -70,7 +70,7 @@ footer {
   align-self: stretch;
   color: black;
   font-size: 16px;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'neue-haas-grotesk-text';
   font-weight: 400;
   line-height: 20px;
   padding-top: 2rem;
@@ -94,7 +94,7 @@ footer {
   width: 201px;
   color: black;
   font-size: 12px;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'neue-haas-grotesk-text';
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@ footer {
   width: 142px;
   color: black;
   font-size: 12px;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'neue-haas-grotesk-text';
   font-weight: 500;
 }
 
@@ -122,7 +122,7 @@ footer {
   text-align: right;
   color: black;
   font-size: 12px;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'neue-haas-grotesk-text';
   font-weight: 400;
 }
 .inquiry-email {
@@ -130,7 +130,7 @@ footer {
   text-align: right;
   color: black;
   font-size: 12px;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'neue-haas-grotesk-text';
   font-weight: 400;
 }
 
@@ -191,7 +191,7 @@ footer {
 
 .design div, .copyright div {
   color: black;
-  font-family: 'Neue Haas Grotesk Text Pro';
+  font-family: 'neue-haas-grotesk-text';
   font-weight: 400;
   letter-spacing: -0.03em;
 }

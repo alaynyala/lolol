@@ -39,7 +39,7 @@ brief:
   - "By implementing custom WordPress post types for exhibitions, films, and events, I created a system that was both flexible and easy for museum staff to manage themselves."
   - "The results were significant: 40% fewer support calls about website navigation, 35% more online ticket sales during reopening, easier content management for staff, and expanded digital engagement through virtual exhibition access. We successfully balanced aesthetics with functionality during a critical transition period for the museum."
 featured_video: "/videos/okcmoa-ftd.webm"
-landing_video: "/videos/okcmoa-landing.webm"
+landing_video: "164d3325b585d066fa612b3fd28445a5"
 previous: "/case-studies/ccb"
 next: "/projects/leaderhealth"
 ---

@@ -4,7 +4,7 @@
             <div class="info-content-text">
             <p>hello, i'm alaina. It's so lovely to meet you.</p>
             <div class="mobile-image">
-                <img src="/img/info-mobile.png" caption="Alaina Hunt photographed by Rachel Maucieri" alt="Alaina Hunt photographed by Rachel Maucieri">
+                <img src="https://files.reimage.dev/ahdotcom/df0bb0830a69/original" caption="Alaina Hunt photographed by Rachel Maucieri" alt="Alaina Hunt photographed by Rachel Maucieri">
                 <p>photo: Rachel Maucieri, <a href="https://maucierivisuals.co/" target="_blank">Maucieri Visuals Co.</a></p>
             </div>
             <p>I'm an experience designer developing immersive and engaging experiences that merge art with design.<br><br>My work spans from digital and web design to art direction and installation design—basically anything that catches my interest.<br><br>With 5+ years of both freelance and agency experience, I've shaped projects across retail, hospitality, banking, venture capital, and construction.<br><br>I bring together artistic vision with empathetic design thinking and practical coding skills, always curious about new techniques and approaches.</p>
@@ -29,7 +29,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('/img/ah-01.png');
+    background-image: url('https://files.reimage.dev/ahdotcom/a9ff1046ad8d/original');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +102,6 @@
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
-    
 }
 
 .cta-link:hover::after {

@@ -17,7 +17,7 @@
         </div>
         <div class="case-study-hero">
             <div class="case-study-hero-video">
-                <CloudflareStream v-if="caseStudy.featured_video" :debug="true" :videoId="caseStudy.featured_video" videoType="caseStudyHero" borderRadius="0.33rem" :autoplay="true" :muted="true" :loop="true" />
+                <CloudflareStream v-if="caseStudy.featured_video" :debug="false" :videoId="caseStudy.featured_video" videoType="caseStudyHero" borderRadius="0.33rem" :autoplay="true" :muted="true" :loop="true" />
             </div>
         </div>
         <div class="case-study-contributions">

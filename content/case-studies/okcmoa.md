@@ -38,7 +38,7 @@ brief:
   - "My approach centered on four improvements: streamlining exhibition discovery, simplifying ticket purchases, creating intuitive navigation, and building virtual platforms essential during lockdowns. I developed a navigation system that dramatically improved content findability across all devices."
   - "By implementing custom WordPress post types for exhibitions, films, and events, I created a system that was both flexible and easy for museum staff to manage themselves."
   - "The results were significant: 40% fewer support calls about website navigation, 35% more online ticket sales during reopening, easier content management for staff, and expanded digital engagement through virtual exhibition access. We successfully balanced aesthetics with functionality during a critical transition period for the museum."
-featured_video: "/videos/okcmoa-ftd.webm"
+featured_video: "6c34f62aa4ab4c7dce839fbc03e589d1"
 landing_video: "164d3325b585d066fa612b3fd28445a5"
 previous: "/case-studies/ccb"
 next: "/projects/leaderhealth"
@@ -200,7 +200,9 @@ next: "/projects/leaderhealth"
 
     @media screen and (max-width: 768px) {
    .content-container {
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: .33rem;
     }
 
     .video-inset {
@@ -212,16 +214,24 @@ next: "/projects/leaderhealth"
       width: 95%; 
     }
 
+    .menus {
+      border-radius: .33rem;
+      height: 150vh;
+    }
+
     .menus-inset {
       display: flex;
       flex-wrap: wrap;
-      align-content: center;
-      justify-content: flex-start;
+      align-content: flex-start;
+      justify-content: space-evenly;
       width: 100%;
+      margin: .33rem 0;
+      padding: 0;
+      border-radius: .33rem;
     }
 
     .menus p {
-      padding: 1rem 0;
+      padding: .5rem 0;
       width: 100%;
       text-align: center;
     }
@@ -234,6 +244,7 @@ next: "/projects/leaderhealth"
       display: flex;
       align-items: center;
       justify-content: center;
+
     }
 
     .menu-1 img, .menu-2 img {
@@ -262,15 +273,15 @@ next: "/projects/leaderhealth"
     }
 
     .menu-video-inset {
-      padding: 1rem;
-      height: auto;
+      height: 100%;
     }
 
-    .menu-video-inset video {
-      width: 100%;
+    .menu-video-inset iframe {
+      width: 103%;
+      border-radius: .33rem;
     }
 
-    .video-inset video{
+    .video-inset iframe {
       padding: 0;
       width: 100%;
 
@@ -281,31 +292,32 @@ next: "/projects/leaderhealth"
 
 <div class="content-container">
 <div class="img-container">
-    <img src="/img/okcmoa/okcmoa-mb.png" />
+    <cloudflare-image imageId="6676ef66-aee6-42e6-3eb8-b90b17dd7200"/>
   </div>
   <div class="img-container">
-    <img src="/img/okcmoa/okcmoa-ip-duo.png"/>
+    <cloudflare-image
+    imageId="9aad6178-9675-42af-0201-616953f23e00"/>
   </div>
   <div class="menus">
     <p>menu design - iteration one</p>
     <div class="menus-inset">
       <div class="menu-1">
-        <img src="img/okcmoa/okcmoa-menu-1.png"/>
+        <cloudflare-image imageId="f6961360-49c5-4402-15a4-2dbf96fadc00"/>
        </div>
       <div class="menu-2">
-        <img src="img/okcmoa/okcmoa-menu-2.png"/>
+         <cloudflare-image imageId="38d3def0-9088-469c-1da6-5bfa2e2a4100"/>
       </div>
     </div>
   </div>
   <div class="video-container">
     <div class="menu-video-inset">
     <p>menu design - final iteration</p>
-      <video src="/videos/okcmoa-menus.webm" autoplay muted loop></video>
+     <iframe src="https://iframe.cloudflarestream.com/af792023e59226435aff80c7669f8960?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
    <div class="video-container">
-    <div class="video-inset">
-      <video src="/videos/okcmoa-film.webm" autoplay muted loop></video>
+    <div class="menu-video-inset">
+      <iframe src="https://iframe.cloudflarestream.com/aa920f88c3edfaa1777b340b56de3482?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>

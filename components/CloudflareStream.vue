@@ -756,14 +756,14 @@ function recheckHeaders() {
 /* Add responsive styles to ensure full-width videos */
 @media screen and (max-width: 768px) {
   .cloudflare-stream-container {
-    width: 100% !important;
+    height: 100% !important;
   }
   
   .stream-media,
   .cs-video-direct,
   .cs-video-iframe {
     width: 100% !important;
-    min-width: 100% !important;
+    min-width: 200% !important;
+   }
   }
-}
 </style> 

@@ -707,6 +707,9 @@ video, .cloudflare-stream-container {
         justify-content: center;
         gap: 1rem;
     }
+    .case-study-item-video, .project-item-video {
+        height: 55vh !important;
+    }
     
 }
 </style>

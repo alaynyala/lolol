@@ -759,11 +759,19 @@ function recheckHeaders() {
     height: 100% !important;
   }
   
-  .stream-media,
-  .cs-video-direct,
-  .cs-video-iframe {
+  .case-study-item-video .cs-video-iframe, 
+  .case-study-item-video .cs-video-direct,
+  .project-item-video .cs-video-iframe,
+  .project-item-video .cs-video-direct {
     width: 100% !important;
     min-width: 200% !important;
    }
+
+   .cs-video-iframe,.cs-video-direct {
+    height: 60vh !important;
   }
+
+  }
+
+
 </style> 

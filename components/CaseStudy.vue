@@ -111,9 +111,13 @@
 import CloudflareStream from '~/components/CloudflareStream.vue'
 
 
+
 const { caseStudy } = defineProps({
     caseStudy: Object
 })
+
+
+
 </script>
 
 <style scoped>
@@ -210,7 +214,7 @@ const { caseStudy } = defineProps({
 .case-study-content .video-container {
     width: 100%;
     position: relative;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     margin-bottom: 0.33rem;
 }
 
@@ -423,6 +427,10 @@ const { caseStudy } = defineProps({
         max-width: 9rem;
         gap: .25rem;
     }
+    .case-study-hero {
+        height: 33vh;
+    }
+
     .case-study-contributions, .collaborators {
         flex-direction: column;
         height: 100%;

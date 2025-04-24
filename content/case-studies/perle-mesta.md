@@ -14,7 +14,7 @@ collaborators:
   development: ["Dane Strom"]
   agency: "Cooper House"
 contributions:
-  research: 
+  research:
     - "Customer Research"
     - "Trends Analysis"
     - "Competitor Review"
@@ -34,12 +34,12 @@ contributions:
   development:
     - "Design Handoff"
     - "Quality Control"
-brief: 
-    - "As Lead Designer for the Perle Mesta restaurant website, I delivered a conversion-focused digital platform that generated pre-opening reservations and increased private dining inquiries by 30% for Chef Andrew Black's new restaurant in the historic Skirvin Hotel."
-    - "I identified a key opportunity to differentiate the site through a time-responsive design that reflects the restaurant's evolving atmosphere throughout the day. By implementing three distinct visual states with synchronized light-leak video backgrounds, I created an immersive digital experience that maintained brand consistency while meeting WCAG accessibility standards."
-    - "My technical approach included developing a comprehensive design system with component documentation, building interactive prototypes demonstrating time-based theme transitions, implementing a conversion-optimized navigation structure based on competitor research, and creating detailed WordPress integration specifications for the development team. This multifaceted approach ensured smooth implementation while maintaining the design integrity throughout the development process."
-    - "The project showcased my ability to bridge digital and physical design—I extended the brand experience by creating a custom mosaic for the private dining room that complemented the website's aesthetic."
-    - "This multifaceted solution not only increased site traffic and streamlined content management for the client but also demonstrated my ability to deliver innovative, results-driven design that solves real business challenges."
+brief:
+  - "As Lead Designer for the Perle Mesta restaurant website, I delivered a conversion-focused digital platform that generated pre-opening reservations and increased private dining inquiries by 30% for Chef Andrew Black's new restaurant in the historic Skirvin Hotel."
+  - "I identified a key opportunity to differentiate the site through a time-responsive design that reflects the restaurant's evolving atmosphere throughout the day. By implementing three distinct visual states with synchronized light-leak video backgrounds, I created an immersive digital experience that maintained brand consistency while meeting WCAG accessibility standards."
+  - "My technical approach included developing a comprehensive design system with component documentation, building interactive prototypes demonstrating time-based theme transitions, implementing a conversion-optimized navigation structure based on competitor research, and creating detailed WordPress integration specifications for the development team. This multifaceted approach ensured smooth implementation while maintaining the design integrity throughout the development process."
+  - "The project showcased my ability to bridge digital and physical design—I extended the brand experience by creating a custom mosaic for the private dining room that complemented the website's aesthetic."
+  - "This multifaceted solution not only increased site traffic and streamlined content management for the client but also demonstrated my ability to deliver innovative, results-driven design that solves real business challenges."
 featured_video: "0541c07120da5061f3d5e574fff9ab19"
 landing_video: "e3fa7f6840ea4c68a24530d34fc79ec1"
 previous: "/projects/rembaum-hanau"
@@ -269,6 +269,7 @@ next: "/case-studies/ccb"
     .three-image-cols {
         flex-direction: column;
         gap: 0rem;
+        margin: .33rem 0;
     }
     .image-col {
         max-width: 100%;
@@ -286,9 +287,16 @@ next: "/case-studies/ccb"
       font-size: .85rem;
     }
     .lbc-content {
-      width: 67vw;
+      width: 70vw;
       align-items: center;
       justify-content: space-evenly;
+      padding: 2rem;
+    }
+
+    .lbc-content img {
+      width: 100%;
+      height: auto;
+
     }
 
     .lbc-link p {
@@ -315,58 +323,57 @@ next: "/case-studies/ccb"
     .link-button img {
       width: 1.5rem;
     }
+
+    .video-container {
+      width: 100%;
+      height: 30vh;
+      padding: 0;
+      margin-bottom: .33rem;
+    }
 }
   </style>
 
 <div class="content-container">
-  <div class="video-container">
-    <cloudflare-stream 
-      videoId="ca8ea7e3df50d2c6f14dacff64c0290d"
-      height="100%"
-      width="100%"
-      videoType="default"
-      :controls="true"
-      :muted="true"
-      :autoplay="true"
-      :loop="true"
-      borderRadius="0.33rem"
-    />
+ <div class="video-container">
+    <iframe src="https://iframe.cloudflarestream.com/4befc80e59a75e2842194f510332eaab?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="image-container-cols">
     <div class="img-left">
       <cloudflare-image imageId="9c542ea5-264f-45ff-082d-6a6964c50000"/>
     </div>
     <div class="img-right">
-     <img src="/img/pm/pm-sitemap.png"/>
+     <cloudflare-image imageId="1646cbb3-dc57-4142-b65a-f1331e7c3200"/>
     </div>
   </div>
   <div class="img-container">
-    <img src="/img/pm/pm-uf.png" />
-  </div>
-  <div class="wireframes">
-    <div class="">
-    </div>
+    <cloudflare-image imageId="708050cd-f769-4788-2451-1d7215f5f300"/>
   </div>
   <div class="img-container">
-    <img src="/img/pm/pm-apprch.png"/>
+    <cloudflare-image imageId="bad16b1c-15f5-446f-8962-0301838ac500"/>
   </div>
   <div class="three-image-cols">
     <div class="image-col">
-      <img src="/img/pm/pm-mrng.png"/>
+      <div class="img-container">
+      <cloudflare-image imageId="bc722250-7817-47e7-3507-9dcaae02ad00"/>
+      </div>
       <div class="desc">
         <p><strong>Morning Service</strong></p>
         <p>verdant, warm, inviting</p>
       </div>
     </div>
    <div class="image-col">
-      <img src="/img/pm/pm-lunch.png"/>
+      <div class="img-container">
+      <cloudflare-image imageId="3d8f7c7e-8ca2-4343-f2ed-4121bce3ca00"/>
+     </div>
       <div class="desc">
         <p><strong>Midday Service</strong></p>
         <p>bright, energetic, dynamic</p>
       </div>
    </div>
    <div class="image-col">
-      <img src="/img/pm/pm-dnr.png"/>
+     <div class="img-container">
+      <cloudflare-image imageId="dd48acc5-9034-40a4-f783-e98ed64e1a00"/>
+     </div>
       <div class="desc">
         <p><strong>Evening Service</strong></p>
         <p>rich, moody, elegant</p>
@@ -374,15 +381,14 @@ next: "/case-studies/ccb"
    </div>
   </div>
   <div class="video-container">
-    <video src="/videos/pm-ui-video-menus.webm" autoplay muted loop></video>
-  </div>
-  <div class="video-container">
-    <video src="/videos/pm-mobile-mu.webm" autoplay muted loop></video>
+    <iframe src="https://iframe.cloudflarestream.com/9d049f71d203fbe0a76d16e5c51e9ea3?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="lbc-container">
     <div class="lbc-content">
       <p>site-specific art</p>
-      <img src="/img/pm/pm-lbc.png"/>
+      <div class="img-container">
+      <cloudflare-image imageId="49abb65e-c756-4b07-3f55-d4763d35f100"/>
+      </div>
       <div class="lbc-link">
         <p>les belles choses</p>
         <div class="link-button">
@@ -392,4 +398,3 @@ next: "/case-studies/ccb"
     </div>
   </div>
 </div>
-

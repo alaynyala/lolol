@@ -43,6 +43,11 @@ onMounted(() => {
     duration: 0.3,
     ease: 'power2.inOut'
   })
+  gsap.from('.item-video-landing', {
+    opacity: 0,
+    duration: 0.3,
+    ease: 'power2.inOut'
+  })
 })
 </script>
 

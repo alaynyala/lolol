@@ -110,7 +110,7 @@
                                     :autoplay="true"
                                     :muted="true"
                                     :loop="true"
-                                    class="item-video" />
+                                    class="item-video-landing" />
                             </div>
                         </NuxtLink>
                     </div>
@@ -584,7 +584,7 @@ video, .cloudflare-stream-container {
     cursor: pointer;
 }
 
-.item-video {
+.item-video-landing {
     position: absolute;
     top: 0;
     left: 0;
@@ -708,7 +708,7 @@ video, .cloudflare-stream-container {
         gap: 1rem;
     }
     .case-study-item-video, .project-item-video {
-        height: 55vh !important;
+        height: 50vh !important;
     }
     
 }

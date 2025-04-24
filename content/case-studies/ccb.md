@@ -39,7 +39,7 @@ brief:
   - "I built a modular design system with consistent branding and accessibility, then guided junior designers to implement templates across the site. I collaborated with developers on creating efficient Elementor templates, implementing some designs myself while ensuring security standards were maintained."
   - "Based on competitor research, I added a sticky sidebar that kept subpages visible without requiring users to leave their current page. We improved content organization through strategic cross-linking and custom fields for better content management."
   - "Our mobile-first approach served diverse users, while accessibility controls gave users options for typography size and contrast. The results speak for themselves: 42% more online applications, 65% fewer support calls about navigation, better accessibility compliance, and client-managed content updates. We successfully balanced professional banking with community warmth and tribal heritage."
-featured_video: "/videos/ccb-intro.webm"
+featured_video: "7c5a3561d1af4e3d4c83c87329dc6f94"
 landing_video: "ba6e61f1399ab55a791d41ae58c81436"
 previous: "/case-studies/perle-mesta"
 next: "/case-studies/okcmoa"
@@ -181,14 +181,18 @@ next: "/case-studies/okcmoa"
         padding: 0;
     }
 
+    .video-container iframe {
+      aspect-ratio: 1/1; 
+      height: 50vh; 
+    }
+
     .video-inset {
       height: 100%;
       padding: 2rem;
+      background-color: white;
     }
 
-    .video-inset video {
-      width: 90%; 
-    }
+   
     
     .image-container-cols {
       flex-direction: column;
@@ -206,21 +210,24 @@ next: "/case-studies/okcmoa"
     }
 
     .wireframes {
-      height: 100vh;
+      height: 160vh;
       align-items: flex-start;
+      justify-content: flex-start;
     }
 
     .wireframes-inset {
+      height: 160vh;
       flex-direction: column;
       flex-wrap: nowrap;
-      height: 100vh;
       align-items: flex-start;
+      justify-content: flex-start;
       gap: .33rem;
+      padding-top: 0;
     }
 
     .wf-left {
       width: 100%;
-      height: 30%;
+      height: 70%;
     }
 
     .wf-left img {
@@ -230,8 +237,10 @@ next: "/case-studies/okcmoa"
 
     .wf-rt {
       width: 100%;
-      height: 60%;
+      height: 100%;
     }
+
+
     .img-inset {
       height: 60vh;
     }
@@ -241,44 +250,35 @@ next: "/case-studies/okcmoa"
 
 <div class="content-container">
   <div class="video-container">
-    <div class="video-inset">
-    <video
-        :src="/videos/ccb-mb-mu.webm"
-        ratio="1/1"
-        autoplay
-        muted
-        loop
-      />
+  <div class="video-inset">
+    <iframe src="https://iframe.cloudflarestream.com/036c7e7b0c9b270ab883719dbfee3c5e?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="img-container">
-    <img
-      src="img/ccb/ccb-mb-3.png"
-      alt="CCB Mobile Design"
-      placeholder="preview"
-    />
+    <cloudflare-image imageId="7038fe81-2daa-4246-55e9-b26c028aa400"/>
   </div>
   <div class="image-container-cols">
     <div class="img-left">
-      <img src="/img/ccb/ccb-up.png"/>
+       <cloudflare-image imageId="0e8b561f-9883-4af0-1b07-9911fa163f00"/>
     </div>
     <div class="img-right">
-     <img src="/img/ccb/ccb-uf.png"/>
+     <cloudflare-image imageId="0d345197-9193-40f0-cd63-ee7cdb632000"/>
     </div>
   </div>
   <div class="wireframes">
     <div class="wireframes-inset">
       <div class="wf-left"> 
-      <img src="/img/ccb/ccb-wf-dt.png"/>
+       <cloudflare-image imageId="6151b9bf-f62e-4162-295d-1853c8874200"/>
       </div>
       <div class="wf-rt"> 
-      <img src="/img/ccb/ccb-wf-mb.png"/>
+       <cloudflare-image imageId="https://imagedelivery.net/XPp5SsZ1VHMdZq-5zMXYKA/13e7fd15-2677-4285-3921-9f2738558900/wf"/>
       </div>
     </div>
   </div>
+  </div>
   <div class="img-container">
   <div class="img-inset">
-    <img src="/img/ccb/ccb-screen.png"/>
+    <cloudflare-image imageId="b9432752-cb29-4e86-9a0c-415e9bb96c00"/>
   </div>
   </div>
 </div>

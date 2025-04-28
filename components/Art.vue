@@ -15,9 +15,10 @@
                 <p>{{ art.year }}</p>
             </div>
         </div>
-        <div class="art-hero">
-            <img class="art-hero-image" :src="art.featured_image" alt="Art Hero Image">
+        <div class="content-container">
+            <ContentDoc />
         </div>
+        
         <div class="art-images-wrapper">
             <div class="art-images">
                 <div class="art-images-container" 
@@ -26,16 +27,22 @@
                     @touchmove="handleTouchMove"
                     @touchend="handleTouchEnd">
                     <div v-for="image in art.images" :key="image" class="art-image-slide">
-                        <img :src="image" :alt="art.title + ' Image'" @load="updateLayout">
+                        <CloudflareImage :imageId="image" :alt="art.title + ' Image'" @load="updateLayout" />
                     </div>
                 </div>
                 <div class="art-images-controls">
-                    <button class="art-images-controls-button left-button" 
-                        v-if="currentIndex > 0"
-                        @click="prevImage">←</button>
-                    <button class="art-images-controls-button right-button" 
-                        v-if="hasMultipleImages && !isLastSlide"
-                        @click="nextImage">→</button>
+                    <span v-if="currentIndex === 0" style="width:3rem;"></span>
+                    <button
+                        class="art-images-controls-button left-button"
+                        v-else
+                        @click="prevImage"
+                    >←</button>
+                    <button
+                        class="art-images-controls-button right-button"
+                        v-if="currentIndex < art.images.length - 1"
+                        @click="nextImage"
+                    >→</button>
+                    <span v-if="currentIndex === art.images.length - 1" style="width:3rem;"></span>
                 </div>
             </div>
         </div>
@@ -54,6 +61,7 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import { gsap } from 'gsap'
+import CloudflareImage from '~/components/CloudflareImage.vue'
 
 const { art } = defineProps({
     art: Object
@@ -205,6 +213,7 @@ const updateLayout = () => {
     align-items: stretch;
     justify-content: flex-start;
     margin: 0 auto;
+    margin-bottom: .33rem;
     gap: 0;
     overflow: hidden;
 }
@@ -213,6 +222,7 @@ const updateLayout = () => {
     display: flex;
     justify-content: space-between;
     padding: 6rem 2rem 2rem 2rem;
+    margin-bottom: .33rem;
 }
 
 .dot {
@@ -262,6 +272,7 @@ const updateLayout = () => {
     width: 100%;
     height: 80%;
     position: relative;
+    margin-bottom: .33rem;
 }   
 
 .art-hero-image {
@@ -275,7 +286,7 @@ const updateLayout = () => {
 
 .art-images-wrapper {
     width: 100%;
-    height: 80%;
+    height: 80vh;
     position: relative;
     border-radius: .33rem;
     overflow: hidden;
@@ -316,10 +327,10 @@ const updateLayout = () => {
     background-color: #fff;
 }
 
-.art-images img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
+.art-images :deep(img) {
+    width: auto;
+    height: 80vh;
+    object-fit: contain;
     border-radius: .33rem;
 }
 
@@ -440,7 +451,7 @@ const updateLayout = () => {
         flex: 0 0 100%;
     }
     
-    .art-images img {
+    .art-images :deep(img) {
         height: 60vh;
         object-fit: cover;
         border-radius: 0.33rem;

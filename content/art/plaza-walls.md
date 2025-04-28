@@ -11,6 +11,9 @@ clients: ["Oklahoma Mural Syndicate"]
 featured_image: "/img/pw-hero.png"
 previous: "/art/the-reader"
 next: "/case-studies/perle-mesta"
-images: ["/img/pw-01.png", "/img/pw-02.png"]
+images: ["7ca54f95-b9e5-4e3a-e49c-6fd088534a00", "18f614ed-7455-4bbb-d57f-2f7400637c00", "1adc539c-29da-43b0-e035-774e65254300"]
 ---
 
+<div class="content-container">
+    <cloudflare-image imageId="7ca54f95-b9e5-4e3a-e49c-6fd088534a00"/>
+</div>

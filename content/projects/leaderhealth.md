@@ -8,7 +8,7 @@ subtitle: "interactive"
 roles: ["UX Research & Strategy", "Lead Web Designer", "Art Direction - Photography"]
 year: 2024
 clients: ["Dr. Shanna Teel"]
-featured_image: "/img/lh/leaderhealth-ftd.png"
+featured_image: "https://imagedelivery.net/XPp5SsZ1VHMdZq-5zMXYKA/f7be2c2f-88f5-4c51-132d-3b0e3471d500/"
 landing_video: "429d56722d3aa274a81b530acb8e8dc4"
 previous: "/case-studies/okcmoa"
 next: "/projects/rembaum-hanau"
@@ -58,11 +58,44 @@ next: "/projects/rembaum-hanau"
     
     .img-container {
       width: 100%;
+      margin-bottom: .33rem;
     }
     
     .img-container img {
       width: 100%;
       height: auto;
+      border-radius: 0.33rem;
+    }
+    .video-container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 0.33rem;
+    margin-bottom: 0.33rem; 
+    padding: 4rem;
+}
+    
+    .video-container .cloudflare-stream-container,
+    .video-container .cloudflare-stream-container iframe {
+      width: 100% !important;
+      height: 100% !important;
+      position: relative;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      border-radius: 0.33rem;
+    }
+    
+    .video-container video,
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+      object-position: center;
       border-radius: 0.33rem;
     }
  
@@ -81,7 +114,7 @@ next: "/projects/rembaum-hanau"
 
     .img-left, .img-right {
       width: 100%;
-      padding: 2rem;
+      padding: 4rem;
     }
   
     .image-col {
@@ -92,28 +125,35 @@ next: "/projects/rembaum-hanau"
         width: 100%;
         height: auto;
     }
+    .video-container {
+      width: 100%;
+      height: 30vh;
+      padding: 0;
+      margin-bottom: .33rem;
+    }
 }
   </style>
 
 <div class="content-container">
     <div class="image-container-cols">
     <div class="img-left">
-      <img src="/img/lh/INTERIORS.png"/>
+      <cloudflare-image imageId="67e4e0f5-fc8d-4796-13ca-524c05871100"/>
     </div>
     <div class="img-right">
-     <img src="/img/lh/INTERIORS-1.png"/>
+     <cloudflare-image imageId="0caf9fce-2a6c-4a4e-967e-d45db0901000"/>
     </div>
   </div>
   <div class="img-container">
-    <img src="/img/lh/lh-about.png" />
+    <cloudflare-image imageId="806eb692-c165-432e-20b5-90b1f6e79900" />
   </div>
    <div class="video-container">
-    <video src="/videos/lh-ui-scroll.webm" autoplay muted loop></video>
+    <iframe src="https://iframe.cloudflarestream.com/c2ee89090517bd749e8fcf675c37d0a8?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
   </div>
   <div class="img-container">
-    <img src="/img/lh/lh-photo.png"/>
+    <cloudflare-image imageId="cc9c0f20-697e-48b2-a069-06f126e18d00"/>
   </div>
    <div class="img-container">
-    <img src="/img/lh/lh-mobile.png"/>
+    <cloudflare-image imageId="7f153765-e562-47e2-1e7b-9114d9860600"/>
   </div>
 </div>

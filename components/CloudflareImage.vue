@@ -6,12 +6,14 @@
       :alt="alt"
       class="cloudflare-image"
       :style="imageStyle"
+      :data-image-id="imageIdValue"
     />
     <img
       v-else
       :src="imageUrl"
       :alt="alt"
       class="cf-image"
+      :data-image-id="imageIdValue"
     />
   </div>
 </template>

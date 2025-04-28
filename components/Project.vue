@@ -36,6 +36,10 @@
 </template>
 
 <script setup>
+import CloudflareImage from './CloudflareImage.vue'
+import CloudflareStream from './CloudflareStream.vue'
+
+
 const { project } = defineProps({
     project: Object
 })
@@ -122,6 +126,7 @@ const { project } = defineProps({
     align-items: flex-start;
     justify-content: space-between;
     height: auto;
+    gap: .33rem;
 }
 
 .project-content h2 {
@@ -180,6 +185,10 @@ const { project } = defineProps({
 
 
 @media (max-width: 768px) {
+
+    .project-content {
+        align-items: center;
+}
     .project-header {
         flex-direction: column;
         align-items: flex-start;

@@ -246,7 +246,7 @@ const embedUrl = computed(() => {
       'playsinline=true',
       'primaryColor=transparent',
       'letterboxColor=transparent',
-      'fill=cover'
+      'fit=cover'
     ];
     
     return `${url}?${params.join('&')}`;
@@ -285,7 +285,6 @@ const embedUrl = computed(() => {
   if (props.videoType === 'caseStudyHero') {
     // Case study hero video needs to fill the container completely
     params.push('fill=cover');
-    params.push('fit=contain');
     params.push('maxHeight=100%');
     params.push('maxWidth=100%');
     params.push('posterHeight=100%');
@@ -294,7 +293,6 @@ const embedUrl = computed(() => {
     params.push('responsive=true');
   } else {
     // Default video scaling
-    params.push('fill=none'); // Don't let Cloudflare handle the fill
     params.push('scale=height'); // Scale based on height
   }
   

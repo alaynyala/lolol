@@ -9,8 +9,8 @@ roles: ["UX Research & Strategy", "Digital Designer", "Assistant Web Developer"]
 year: 2021
 clients: ["Oklahoma City Museum of Art"]
 collaborators:
-  brand_design: ["Braid"]
-  brand_messaging: ["Erin Cooper"]
+  brand_design: ["Switch"]
+  creative_direction: ["Erin Cooper"]
   development: ["Dane Strom", "Alaina Hunt"]
   agency: "Cooper House"
   
@@ -60,30 +60,37 @@ next: "/projects/leaderhealth"
       align-items: center;
       justify-content: center;
       border-radius: .33rem;
+      height: 60vh;
+      min-height: 400px;
     }
      .video-inset video {
       width: 100%; 
+      height: 100%;
+      object-fit: cover;
       border-radius: .33rem;
     }
 
     .menu-video-inset {
-      height: fit-content;
+      height: 60vh;
+      min-height: 400px;
       background: #CE0E0E;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       border-radius: .33rem;
-      padding: 4rem;
+      padding: 2rem 4rem;
 
     }
     
     .menu-video-inset video {
-      width: 80%;
-      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: cover!important;
       border-radius: 0.33rem;
       box-shadow: -3px 15px 34px rgba(0, 0, 0, 0.10);
     }
+
 
     .image-container-cols {
       width: 100%;
@@ -277,14 +284,15 @@ next: "/projects/leaderhealth"
     }
 
     .menu-video-inset iframe {
-      width: 103%;
+      width: 100%;
+      height: 100%;
       border-radius: .33rem;
     }
 
     .video-inset iframe {
-      padding: 0;
       width: 100%;
-
+      height: 100%;
+      border-radius: .33rem;
     }
 
 }
@@ -312,12 +320,12 @@ next: "/projects/leaderhealth"
   <div class="video-container">
     <div class="menu-video-inset">
     <p>menu design - final iteration</p>
-     <iframe src="https://iframe.cloudflarestream.com/af792023e59226435aff80c7669f8960?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe src="https://iframe.cloudflarestream.com/af792023e59226435aff80c7669f8960?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true&fit=cover&width=100%&height=100%"  style="border: none; height: 100%; width: 100%; top: 0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
    <div class="video-container">
     <div class="menu-video-inset">
-      <iframe src="https://iframe.cloudflarestream.com/aa920f88c3edfaa1777b340b56de3482?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true" style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://iframe.cloudflarestream.com/aa920f88c3edfaa1777b340b56de3482?autoplay=true&muted=true&loop=true&controls=false&preload=auto&responsive=true&fit=cover&width=100%&height=100%" style="border: none; height: 100%; width: 100%; top: 0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>

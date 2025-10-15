@@ -8,7 +8,7 @@ subtitle: "interactive"
 roles: ["UX Research & Strategy", "Lead Web Designer", "Art Direction - Photography"]
 year: 2024
 clients: ["Dr. Shanna Teel"]
-featured_image: "https://imagedelivery.net/XPp5SsZ1VHMdZq-5zMXYKA/f7be2c2f-88f5-4c51-132d-3b0e3471d500/"
+featured_image: "https://imagedelivery.net/XPp5SsZ1VHMdZq-5zMXYKA/f7be2c2f-88f5-4c51-132d-3b0e3471d500/public"
 landing_video: "429d56722d3aa274a81b530acb8e8dc4"
 previous: "/case-studies/okcmoa"
 next: "/projects/rembaum-hanau"
